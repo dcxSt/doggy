@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Your Friend</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div id="menuBar">
+                <!-- Navigation menu could go here if needed -->
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Write a Message to Your Friend</h1>
+        <form id="messageForm" action="/submit-message" method="POST">
+            <label for="friendSelect">Choose a friend:</label>
+            <select id="friendSelect" name="friend">
+                <option value="friend1">Friend 1</option>
+                <option value="friend2">Friend 2</option>
+                <option value="friend3">Friend 3</option>
+                <!-- Add more friends as options here -->
+            </select>
+
+            <label for="messageText">Your message:</label>
+            <textarea id="messageText" name="message" rows="4" cols="50"></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </main>
+
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+
+</body>
+</html>

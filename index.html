@@ -1,0 +1,46 @@
+<html>
+    <style>
+    @keyframes moveRight {
+        0% { transform: translateX(-20%); }
+        100% { transform: translateX(120%); }
+    }
+    @keyframes corgis {
+        0% {background-position: 120%,-20%,-20%,120%;}
+        /* 25% { background-position: 120%,-20%,-20%,120%;} */
+        30% { background-position: -20%,-20%,-20%,120%;}
+        55% { background-position: -20%,120%,-20%,120%;
+        }
+        65% {
+            background-position: -20%,120%,-20%,120%;
+        }
+        95% {
+            background-position: -20%,120%,120%,-20%;
+        }
+
+        100% {
+            background-position: -20%,120%,120%,-20%;
+        }
+    }
+    .moving-image {
+        animation: moveRight 5s linear infinite;
+    }
+    .corgi {
+        background-image: url("https://io0-questions.s3.us-west-2.amazonaws.com/output.gif"), url("https://io0-questions.s3.us-west-2.amazonaws.com/output.gif"), url("https://io0-questions.s3.us-west-2.amazonaws.com/output.gif"), url("https://io0-questions.s3.us-west-2.amazonaws.com/output.gif"), url("https://io0-questions.s3.us-west-2.amazonaws.com/output.gif");
+        height: 200px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        animation: corgis 95s linear infinite;
+    }
+    .woofer {
+        background-image: url("./public/doggo01.gif");
+        height: 200px;
+        width: 230px;
+    }
+    </style>
+<body>
+    <div class="corgi"></div>
+    <!-- <img src="https://io0-questions.s3.us-west-2.amazonaws.com/corgi_animation_transparent.gif", background="none"/> -->
+    <div class="woofer moving-image"></div>
+</body>
+</html>
